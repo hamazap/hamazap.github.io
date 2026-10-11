@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>girlhood ♡</title>
+
+<meta name="description" content="An archive of the things that make us girls. Stories, culture, fashion, and growing up.">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+:root {
+
+  --pink: #f4c6d3;
+
+  --paper: #fff8f0;
+
+  --rose: #d98da6;
+
+  --ink: #49363f;
+
+  --beige: #e9d9c9;
+
+}
+
+* { box-sizing: border-box; }
+
+body {
+
+  margin: 0;
+
+  background: var(--paper);
+
+  color: var(--ink);
+
+  font-family: 'DM Sans', sans-serif;
+
+}
+
+a { color: inherit; }
+
+.top-note {
+
+  text-align: center;
+
+  padding: 10px;
+
+  background: var(--pink);
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+}
+
+header {
+
+  text-align: center;
+
+  padding: 30px 16px 22px;
+
+}
+
+.logo {
+
+  font-family: 'Playfair Display', Georgia, serif;
+
+  font-style: italic;
+
+  font-size: clamp(54px, 13vw, 90px);
+
+  margin: 0;
+
+  font-weight: 400;
+
+}
+
+.tagline {
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  margin: 8px 0 20px;
+
+}
+
+nav {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 22px;
+
+  padding: 15px 5px;
+
+  border-top: 1px solid var(--beige);
+
+  border-bottom: 1px solid var(--beige);
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+}
+
+nav a { text-decoration: none; }
+
+nav a:hover { color: var(--rose); }
+
+main {
+
+  max-width: 950px;
+
+  margin: auto;
+
+  padding: 28px 20px;
+
+}
+
+.intro {
+
+  background: var(--pink);
+
+  padding: 30px 24px;
+
+  position: relative;
+
+  transform: rotate(-0.4deg);
+
+  margin: 8px 0 42px;
+
+}
+
+.small-label {
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+}
+
+.intro h2 {
+
+  font: italic 400 clamp(28px, 6vw, 43px) 'Playfair Display', Georgia, serif;
+
+  line-height: 1.25;
+
+  margin: 15px 0;
+
+  max-width: 600px;
+
+}
+
+.intro p {
+
+  max-width: 540px;
+
+  line-height: 1.8;
+
+  font-size: 14px;
+
+}
+
+.section-heading {
+
+  font: italic 400 30px 'Playfair Display', Georgia, serif;
+
+  margin: 0 0 22px;
+
+}
+
+.feature {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 28px;
+
+  align-items: center;
+
+  margin-bottom: 55px;
+
+}
+
+.photo-frame {
+
+  background: white;
+
+  padding: 10px 10px 28px;
+
+  box-shadow: 2px 4px 0 var(--beige);
+
+  transform: rotate(-2deg);
+
+}
+
+.photo-frame img {
+
+  display: block;
+
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
+  object-fit: cover;
+
+}
+
+.feature-copy .category {
+
+  color: #a85e79;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+}
+
+.feature-copy h3 {
+
+  font: 400 clamp(25px, 4vw, 38px) 'Playfair Display', Georgia, serif;
+
+  line-height: 1.25;
+
+  margin: 12px 0;
+
+}
+
+.feature-copy p {
+
+  font-size: 13px;
+
+  line-height: 1.9;
+
+}
+
+.read-link {
+
+  display: inline-block;
+
+  margin-top: 10px;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  text-decoration-thickness: 1px;
+
+  text-underline-offset: 5px;
+
+}
+
+.categories {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 28px 20px;
+
+  margin-bottom: 55px;
+
+}
+
+.category-card { text-decoration: none; }
+
+.category-card img {
+
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
+  object-fit: cover;
+
+  border: 7px solid white;
+
+  box-shadow: 2px 3px 0 var(--beige);
+
+  display: block;
+
+  margin-bottom: 13px;
+
+  transition: transform 0.2s;
+
+}
+
+.category-card:hover img { transform: rotate(-1deg); }
+
+.category-card h3 {
+
+  font: 400 21px 'Playfair Display', Georgia, serif;
+
+  margin: 0 0 7px;
+
+}
+
+.category-card p {
+
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  margin: 0;
+
+}
+
+.note {
+
+  background: #f8e8e8;
+
+  padding: 25px;
+
+  text-align: center;
+
+  margin: 30px 0;
+
+}
+
+.note p {
+
+  font: italic 20px 'Playfair Display', Georgia, serif;
+
+}
+
+footer {
+
+  text-align: center;
+
+  border-top: 1px solid var(--beige);
+
+  padding: 30px 15px;
+
+  font-size: 11px;
+
+  line-height: 2;
+
+}
+
+@media (max-width: 600px) {
+
+  main { padding: 22px 18px; }
+
+  .feature { grid-template-columns: 1fr; gap: 22px; }
+
+  .categories { gap: 25px 14px; }
+
+  .category-card h3 { font-size: 17px; }
+
+  nav { gap: 13px; }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top-note">A LITTLE CORNER OF THE INTERNET, JUST FOR US ♡</div>
+
+<header>
+
+  <h1 class="logo">girlhood</h1>
+
+  <p class="tagline">STORIES · CULTURE · FASHION · GROWING UP</p>
+
+  <nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="archive.html">Stories</a>
+
+    <a href="#categories">Explore</a>
+
+    <a href="about.html">About</a>
+
+  </nav>
+
+</header>
+
+<main>
+
+  <section class="intro">
+
+    <span class="small-label">A little introduction ♡</span>
+
+    <h2>An archive of the things that make us girls.</h2>
+
+    <p>A collection of stories about growing up, the things we love, and the culture that shapes us. Think of this as a scrapbook: part observation, part conversation, and part love letter to girlhood.</p>
+
+  </section>
+
+  <h2 class="section-heading">freshly filed away...</h2>
+
+  <section class="feature">
+
+    <div class="photo-frame">
+
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900" alt="Fashion editorial portrait">
+
+    </div>
+
+    <div class="feature-copy">
+
+      <span class="category">The Things We Wear · 001</span>
+
+      <h3>Why Is Pink Considered a Girl's Color?</h3>
+
+      <p>We grow up surrounded by colors that seem to tell us who we're supposed to be. But the story of pink is more complicated than you might think.</p>
+
+      <a class="read-link" href="article-pink.html">READ THE STORY ↗</a>
+
+    </div>
+
+  </section>
+
+  <h2 class="section-heading" id="categories">little things, big feelings ♡</h2>
+
+  <section class="categories">
+
+    <a class="category-card" href="archive.html#fashion">
+
+      <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=700" alt="Fashion and personal style">
+
+      <h3>The Things We Wear</h3>
+
+      <p>Fashion, beauty, and the meanings behind what we put on.</p>
+
+    </a>
+
+    <a class="category-card" href="archive.html#girlhood">
+
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700" alt="Friends spending time together">
+
+      <h3>The Girls We Become</h3>
+
+      <p>Friendship, identity, memories, and growing into ourselves.</p>
+
+    </a>
+
+    <a class="category-card" href="archive.html#culture">
+
+      <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=700" alt="Art and creative culture">
+
+      <h3>The Culture That Raised Us</h3>
+
+      <p>Music, movies, magazines, and the stories that shape us.</p>
+
+    </a>
+
+    <a class="category-card" href="archive.html#interviews">
+
+      <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=700" alt="Notebook and writing">
+
+      <h3>Girls With Stories</h3>
+
+      <p>Conversations with girls and creatives who have something to say.</p>
+
+    </a>
+
+  </section>
+
+  <section class="note">
+
+    <span class="small-label">A note from the editor</span>
+
+    <p>“There is so much more to being a girl than the world lets us say.”</p>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <p>made with love, curiosity, and a little pink ♡</p>
+
+  <p>filed away in the girlhood archive</p>
+
+</footer>
+
+</body>
+
+</html>
