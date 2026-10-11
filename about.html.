@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | girlhood ♡</title>
+<style>
+body{margin:0;background:#fff8f0;color:#49363f;font-family:Georgia,serif}
+header{text-align:center;padding:25px 12px}
+.logo{font-size:58px;font-style:italic;margin:0}
+nav{text-align:center;padding:15px;border-block:1px solid #e9d9c9;font:12px Arial,sans-serif}
+nav a{color:#49363f;margin:0 9px;text-decoration:none}
+main{max-width:680px;margin:40px auto;padding:0 24px}
+h2{font-size:36px;font-weight:normal;font-style:italic}
+p{font-size:16px;line-height:1.95}
+.note{background:#f4c6d3;padding:24px;margin-top:30px}
+footer{text-align:center;padding:30px;color:#b16b84}
+</style>
+</head>
+<body>
+<header>
+<h1 class="logo">girlhood</h1>
+<p>An archive of the things that make us girls. ♡</p>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="archive.html">Stories</a>
+<a href="index.html#categories">Explore</a>
+<a href="about.html">About</a>
+</nav>
+<main>
+<p>ABOUT THIS LITTLE CORNER OF THE INTERNET</p>
+<h2>Dear girl, this is for you.</h2>
+
+<p>Girlhood is a digital scrapbook dedicated to the experiences, ideas, memories, and questions that shape what it means to grow up as a girl.</p>
+
+<p>Through fashion, culture, personal essays, interviews, history, and conversations, this publication explores the things we wear, the people we become, the media that influences us, and the stories we don't always get to tell.</p>
+
+<p>This isn't about defining girlhood for everyone. Every girl has a different story, and that's exactly why those stories deserve to be heard.</p>
+
+<p>Think of this space as a scrapbook and an archive: a place to collect little moments, ask bigger questions, learn something new, and recognize pieces of yourself in someone else's experience.</p>
+
+<div class="note">
+<h2>A little note from the editor ♡</h2>
+<p>Thank you for being here. I hope you find something that makes you think, feel understood, or see the world a little differently.</p>
+</div>
+</main>
+<footer>made with curiosity and a little pink ♡</footer>
+</body>
+</html>
