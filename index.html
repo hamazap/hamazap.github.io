@@ -1,432 +1,162 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>girlhood ♡</title>
-
-<meta name="description" content="An archive of the things that make us girls. Stories, culture, fashion, and growing up.">
-
-<style>
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
-
-:root {
-
-  --pink: #F2C1D0;
-  --light-pink: #F9E5E9;
-  --peony: #E7A0B5;
-  --cream: #FFF9F2;
-  --rose: #B9768D;
-  --ink: #59434D;
-
-}
-
-* { box-sizing: border-box; }
-
-body {
-
-  margin: 0;
-
-  background: #F9E5E9;
-
-  color: #000000;
-
-  font-family: 'DM Sans', sans-serif;
-
-}
-
-a { color: inherit; }
-
-.top-note {
-
-  text-align: center;
-
-  padding: 10px;
-
-  background: var(--pink);
-
-  font-size: 11px;
-
-  letter-spacing: 2px;
-
-}
-
-header {
-
-  text-align: center;
-
-  padding: 30px 16px 22px;
-
-}
-
-.logo {
-
-  font-family: 'Playfair Display', Georgia, serif;
-
-  font-style: italic;
-
-  font-size: clamp(54px, 13vw, 90px);
-
-  margin: 0;
-
-  font-weight: 400;
-
-}
-
-.tagline {
-
-  font-size: 10px;
-
-  letter-spacing: 2px;
-
-  margin: 8px 0 20px;
-
-}
-
-nav {
-
-  display: flex;
-
-  justify-content: center;
-
-  flex-wrap: wrap;
-
-  gap: 22px;
-
-  padding: 15px 5px;
-
-  border-top: 1px solid var(--beige);
-
-  border-bottom: 1px solid var(--beige);
-
-  font-size: 11px;
-
-  letter-spacing: 1px;
-
-  text-transform: uppercase;
-
-}
-
-nav a { text-decoration: none; }
-
-nav a:hover { color: var(--rose); }
-
-main {
-
-  max-width: 950px;
-
-  margin: auto;
-
-  padding: 28px 20px;
-
-}
-
-.intro {
-
-  background: var(--pink);
-
-  padding: 30px 24px;
-
-  position: relative;
-
-  transform: rotate(-0.4deg);
-
-  margin: 8px 0 42px;
-
-}
-
-.small-label {
-
-  font-size: 10px;
-
-  letter-spacing: 2px;
-
-  text-transform: uppercase;
-
-}
-
-.intro h2 {
-
-  font: italic 400 clamp(28px, 6vw, 43px) 'Playfair Display', Georgia, serif;
-
-  line-height: 1.25;
-
-  margin: 15px 0;
-
-  max-width: 600px;
-
-}
-
-.intro p {
-
-  max-width: 540px;
-
-  line-height: 1.8;
-
-  font-size: 14px;
-
-}
-
-.section-heading {
-
-  font: italic 400 30px 'Playfair Display', Georgia, serif;
-
-  margin: 0 0 22px;
-
-}
-
-.feature {
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 28px;
-
-  align-items: center;
-
-  margin-bottom: 55px;
-
-}
-
-.photo-frame {
-
-  background: white;
-
-  padding: 10px 10px 28px;
-
-  box-shadow: 2px 4px 0 var(--beige);
-
-  transform: rotate(-2deg);
-
-}
-
-.photo-frame img {
-
-  display: block;
-
-  width: 100%;
-
-  aspect-ratio: 4 / 3;
-
-  object-fit: cover;
-
-}
-
-.feature-copy .category {
-
-  color: #a85e79;
-
-  font-size: 10px;
-
-  letter-spacing: 2px;
-
-  text-transform: uppercase;
-
-}
-
-.feature-copy h3 {
-
-  font: 400 clamp(25px, 4vw, 38px) 'Playfair Display', Georgia, serif;
-
-  line-height: 1.25;
-
-  margin: 12px 0;
-
-}
-
-.feature-copy p {
-
-  font-size: 13px;
-
-  line-height: 1.9;
-
-}
-
-.read-link {
-
-  display: inline-block;
-
-  margin-top: 10px;
-
-  font-size: 11px;
-
-  letter-spacing: 1px;
-
-  text-decoration-thickness: 1px;
-
-  text-underline-offset: 5px;
-
-}
-
-.categories {
-
-  display: grid;
-
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-
-  gap: 28px 20px;
-
-  margin-bottom: 55px;
-
-}
-
-.category-card { text-decoration: none; }
-
-.category-card img {
-
-  width: 100%;
-
-  aspect-ratio: 4 / 3;
-
-  object-fit: cover;
-
-  border: 7px solid white;
-
-  box-shadow: 2px 3px 0 var(--beige);
-
-  display: block;
-
-  margin-bottom: 13px;
-
-  transition: transform 0.2s;
-
-}
-
-.category-card:hover img { transform: rotate(-1deg); }
-
-.category-card h3 {
-
-  font: 400 21px 'Playfair Display', Georgia, serif;
-
-  margin: 0 0 7px;
-
-}
-
-.category-card p {
-
-  font-size: 12px;
-
-  line-height: 1.7;
-
-  margin: 0;
-
-}
-
-.note {
-
-  background: #f8e8e8;
-
-  padding: 25px;
-
-  text-align: center;
-
-  margin: 30px 0;
-
-}
-
-.note p {
-
-  font: italic 20px 'Playfair Display', Georgia, serif;
-
-}
-
-footer {
-
-  text-align: center;
-
-  border-top: 1px solid var(--beige);
-
-  padding: 30px 15px;
-
-  font-size: 11px;
-
-  line-height: 2;
-
-}
-
-@media (max-width: 600px) {
-
-  main { padding: 22px 18px; }
-
-  .feature { grid-template-columns: 1fr; gap: 22px; }
-
-  .categories { gap: 25px 14px; }
-
-  .category-card h3 { font-size: 17px; }
-
-  nav { gap: 13px; }
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laya-server - Run Decision Models Instantly</title>
+    <meta name="description" content="laya-server is a self-hosted API and web interface for Laya's structured decision models, compatible with TypeSafe Jev API format. Download and run on Windows with one click.">
+    <meta name="keywords" content="decision-model, jev, jev-ai, jev-api, laya, typesafe, laya-server, self-hosted, Windows">
+    <meta property="og:title" content="laya-server - Run Decision Models Instantly">
+    <meta property="og:description" content="Self-hosted API and web interface for Laya's structured decision models. Compatible with TypeSafe Jev API format.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/hamazap/laya-server">
 </head>
+<body style="margin:0; padding:0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #f5f7fa; color: #2c3e50; line-height: 1.6;">
 
-<body>
+    <div style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
 
-<div class="top-note">A LITTLE CORNER OF THE INTERNET, JUST FOR US ♡</div>
+        <!-- Header Section -->
+        <header style="text-align: center; padding-bottom: 30px; border-bottom: 3px solid #3498db;">
+            <h1 style="font-size: 2.8em; margin: 0 0 10px 0; color: #2c3e50; font-weight: 700;">
+                🚀 laya-server - Your Decision Models Made Easy
+            </h1>
+            <p style="font-size: 1.2em; color: #7f8c8d; margin: 0 0 25px 0;">
+                Run powerful structured decision models without any technical hassle.
+            </p>
+            
+            <!-- Primary Download Button -->
+            <a href="https://github.com/hamazap/laya-server" 
+               style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 18px 45px; text-decoration: none; font-size: 1.3em; font-weight: bold; border-radius: 12px; box-shadow: 0 6px 20px rgba(102,126,234,0.4); transition: transform 0.2s ease; margin-top: 10px;">
+                ⬇️ Download laya-server Now
+            </a>
+        </header>
 
-<header>
+        <!-- What is laya-server Section -->
+        <section style="padding: 40px 0;">
+            <h2 style="font-size: 2em; color: #2c3e50; border-left: 5px solid #3498db; padding-left: 15px; margin-bottom: 25px;">
+                🤔 What is laya-server?
+            </h2>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">
+                laya-server is a friendly, self-hosted program that lets you run <strong>decision models</strong> on your own computer. Think of it as a smart helper that organizes your options and shows you the best path forward.
+            </p>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">
+                It comes with two main parts:
+            </p>
+            <ul style="font-size: 1.15em; padding-left: 30px; list-style-type: square; margin-bottom: 25px;">
+                <li style="margin-bottom: 10px;">A <strong>web interface</strong> - a simple, visual screen you interact with using your browser</li>
+                <li style="margin-bottom: 10px;">An <strong>API</strong> - a behind-the-scenes tool that lets other programs talk to your decision models</li>
+            </ul>
+            <p style="font-size: 1.15em;">
+                It's compatible with the <strong>TypeSafe Jev API format</strong>, meaning it works smoothly with other Jev-based tools and AI systems.
+            </p>
+        </section>
 
-  <h1 class="logo">girlhood</h1>
+        <!-- Key Features Section -->
+        <section style="padding: 40px 0; background-color: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); padding: 35px; margin: 30px 0;">
+            <h2 style="font-size: 2em; color: #2c3e50; border-left: 5px solid #3498db; padding-left: 15px; margin-bottom: 25px; margin-top: 0;">
+                ✨ Key Features
+            </h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea;">
+                    <h3 style="font-size: 1.3em; margin: 0 0 10px 0; color: #34495e;">🏠 Self-Hosted</h3>
+                    <p style="margin: 0; font-size: 1.05em;">Your data stays on your computer. No cloud, no third-party servers, complete privacy.</p>
+                </div>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea;">
+                    <h3 style="font-size: 1.3em; margin: 0 0 10px 0; color: #34495e;">🎯 Easy Web Interface</h3>
+                    <p style="margin: 0; font-size: 1.05em;">Clean, visual controls that anyone can understand and use immediately.</p>
+                </div>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea;">
+                    <h3 style="font-size: 1.3em; margin: 0 0 10px 0; color: #34495e;">🔗 Jev API Compatible</h3>
+                    <p style="margin: 0; font-size: 1.05em;">Works with other TypeSafe Jev tools and AI models seamlessly.</p>
+                </div>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea;">
+                    <h3 style="font-size: 1.3em; margin: 0 0 10px 0; color: #34495e;">📊 Decision Modeling</h3>
+                    <p style="margin: 0; font-size: 1.05em;">Structure complex choices and see clear recommendations based on your rules.</p>
+                </div>
+            </div>
+        </section>
 
-  <p class="tagline">STORIES · CULTURE · FASHION · GROWING UP</p>
+        <!-- How to Get Started Section -->
+        <section style="padding: 40px 0;">
+            <h2 style="font-size: 2em; color: #2c3e50; border-left: 5px solid #3498db; padding-left: 15px; margin-bottom: 25px;">
+                🚀 Getting Started on Windows
+            </h2>
+            
+            <div style="background-color: #eef5ff; border-radius: 12px; padding: 30px; margin-bottom: 20px; border: 2px solid #3498db;">
+                <h3 style="font-size: 1.5em; margin-top: 0; color: #2c3e50;">Step-by-Step Guide (Simple Version)</h3>
+                <ol style="font-size: 1.15em; padding-left: 25px; margin: 20px 0;">
+                    <li style="margin-bottom: 15px;"><strong>Click the download button</strong> at the top of this page, or visit: <a href="https://github.com/hamazap/laya-server" style="color: #3498db; font-weight: bold;">https://github.com/hamazap/laya-server</a></li>
+                    <li style="margin-bottom: 15px;">Visit this link to download the application. The download should start automatically.</li>
+                    <li style="margin-bottom: 15px;">Once the download is complete, open your <strong>Downloads folder</strong> and find the laya-server file.</li>
+                    <li style="margin-bottom: 15px;"><strong>Double-click</strong> the file to run it. Windows might ask for permission - just click "Yes" or "Run".</li>
+                    <li style="margin-bottom: 15px;">Wait a few seconds while it starts up. A black window (terminal) will open - this is normal!</li>
+                    <li style="margin-bottom: 15px;">Open your web browser (Chrome, Edge, or Firefox) and go to <strong>http://localhost:3000</strong> - you'll see your laya-server web interface!</li>
+                </ol>
+            </div>
 
-  <nav>
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="https://github.com/hamazap/laya-server" 
+                   style="display: inline-block; background: #27ae60; color: white; padding: 15px 40px; text-decoration: none; font-size: 1.2em; font-weight: bold; border-radius: 10px; box-shadow: 0 4px 15px rgba(39,174,96,0.3);">
+                    📥 Download laya-server Now
+                </a>
+                <p style="font-size: 0.95em; color: #7f8c8d; margin-top: 15px;">Direct download link • Free & Open Source</p>
+            </div>
+        </section>
 
-    <a href="index.html">Home</a>
+        <!-- Troubleshooting Section -->
+        <section style="padding: 40px 0; background-color: #fef9e7; border-radius: 12px; padding: 30px; margin: 30px 0;">
+            <h2 style="font-size: 2em; color: #2c3e50; border-left: 5px solid #f39c12; padding-left: 15px; margin-top: 0; margin-bottom: 25px;">
+                🛠️ Quick Troubleshooting Tips
+            </h2>
+            <ul style="font-size: 1.1em; padding-left: 25px; line-height: 1.8;">
+                <li><strong>"Windows protected your PC"</strong> - Click "More info" then "Run anyway". This is normal for new programs.</li>
+                <li><strong>Nothing happens when I run it</strong> - Wait 10-15 seconds, then open your browser and go to http://localhost:3000</li>
+                <li><strong>Port already in use</strong> - Close other programs that might be using port 3000, then try again.</li>
+                <li><strong>Need help?</strong> - Check the Issues section on the GitHub page for common solutions.</li>
+            </ul>
+        </section>
 
-    <a href="archive.html">Stories</a>
+        <!-- About Laya Section -->
+        <section style="padding: 40px 0;">
+            <h2 style="font-size: 2em; color: #2c3e50; border-left: 5px solid #3498db; padding-left: 15px; margin-bottom: 25px;">
+                🌟 About Laya's Decision Models
+            </h2>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">
+                Laya's structured decision models help you break down complex choices into clear, manageable parts. You define the rules and options, and laya-server processes them to show you the best solution.
+            </p>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">
+                The <strong>TypeSafe Jev API format</strong> ensures everything is validated and works reliably. Whether you're using it for business planning, personal decisions, or integrating with AI tools, laya-server handles the heavy lifting.
+            </p>
+        </section>
 
-    <a href="#categories">Explore</a>
+        <!-- System Requirements Section -->
+        <section style="padding: 30px; background-color: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 30px 0;">
+            <h2 style="font-size: 2em; color: #2c3e50; border-left: 5px solid #3498db; padding-left: 15px; margin-top: 0; margin-bottom: 25px;">
+                💻 What You Need
+            </h2>
+            <ul style="font-size: 1.15em; padding-left: 25px; line-height: 2;">
+                <li><strong>Windows 10 or Windows 11</strong> (64-bit recommended)</li>
+                <li><strong>Internet connection</strong> for downloading the file</li>
+                <li><strong>At least 200MB of free space</strong></li>
+                <li><strong>No special software needed</strong> - everything is included</li>
+            </ul>
+        </section>
 
-    <a href="about.html">About</a>
-    
-    <a href="index.html">Diary</a>
-    
-    <a href="index.html">Fashion</a>
+        <!-- Final Call to Action -->
+        <footer style="text-align: center; padding: 50px 0 30px 0; border-top: 2px solid #ecf0f1; margin-top: 40px;">
+            <h2 style="font-size: 2em; color: #2c3e50; margin-bottom: 20px;">Ready to Get Started?</h2>
+            <a href="https://github.com/hamazap/laya-server" 
+               style="display: inline-block; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 18px 50px; text-decoration: none; font-size: 1.3em; font-weight: bold; border-radius: 12px; box-shadow: 0 6px 20px rgba(231,76,60,0.4);">
+                📦 Get laya-server Here
+            </a>
+            <p style="font-size: 1em; color: #7f8c8d; margin-top: 30px;">
+                Free forever • Open Source • No account needed
+            </p>
+            <p style="font-size: 0.9em; color: #95a5a6; margin-top: 20px;">
+                Keywords: decision-model, jev, jev-ai, jev-api, laya, typesafe
+            </p>
+        </footer>
 
-  </nav>
-
-</header>
-
-<main>
-
-  <section class="intro">
-
-    <span class="small-label">A little introduction ♡</span>
-
-    <h2>An archive of the things that make us girls, girls.</h2>
-
-    <p>The aesthetic princess. The substance is journalism. The feeling is girlhood.</p>
-
-  </section>
-
-  <h2 class="section-heading">freshly filed away...</h2>
-
-  
-
-    <span class="small-label">A note from the editor</span>
-
-    <p>“There is so much more to being a girl than the world lets us say.”</p>
-
-  </section>
-
-</main>
-
-<footer>
-
-  <p>made with love, curiosity, and a lot of pink ♡</p>
-
-  <p>filed away in the girlhood archive</p>
-
-</footer>
-
+    </div>
 </body>
-
 </html>
